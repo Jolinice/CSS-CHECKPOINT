@@ -3,41 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital
+,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,
+100;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
     <title>MY HTML CHECKPOINT</title>
 </head>
 <body>
-  <header class="navbar">
-    <!-- this is the header which contain the navigation bar -->
+     <!-- this is the header which contain the navigation bar -->
+  <header>
     <nav>
-        <H2 style="color: orangered;">HOME</H2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="main">
+        <div class="nav">
+
+        
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+    </div>
     </header> 
     
     <section class="container">
         <!-- this is the about me section -->
         <div class="about">
-        <h2 style="color: orangered;">ABOUT</h2>
-        <p>
-            I am John, <strong>a Full Stack Web Development</strong> student in GOMYCODE Lekki Hackerspace. I am aspiring 
-            to be a full stack JavaScript Developer and to contribute my quota in creating scalable
-            and responsive websites for businesses and organizations across the world. My dream
-            is to become one of the <em>best Developer in Nigeria</em> and this is possible and realistic due
-            to the solid foundation in web Development given to us at GOMYCODE. Currently, i am working 
-            a project to create and prototype a website as to sharpen my understanding of the course taught to me 
-            in the classroom and relating them to real life projects. I hope for the best as  I journey
-            in this amazing journey to become a full Web stack Developer. 
-        </p>
+        <h2 id="text">About Me</h2>
+        
+           <h3 id="john"> I am John.</h3>
+            <h2 id="web"> a Full Stack Web Development</h2>  student in GOMYCODE Lekki Hackerspace. <br> I am aspiring 
+            to be a full stack JavaScript Developer <br>
+            I wish to contribute my quota in creating scalable
+            and responsive websites for businesses and organizations across the world.</h4><br><br>
+            <a href="" id="connect">Connect with me</a>
+        
         </div>
     </section> <br>
     
-    <section>
+    <section class="resume">
         <!-- here is my resume -->
         <div class="resume">
             <h2 style="text-align: center; color: orangered;">MY RESUME</h2>
@@ -107,9 +119,9 @@
 <section>
     <!-- this section contain the work profile and a table to show my level of expertise -->
     <div class="work">
-        <h1 style="color: orangered;">WORK PROFILE</h1><br>
-        <h3>LEVEL OF EXPERTISE</h3>
-                <table border="1px">
+        <h1 style="color: orangered;" id="work">WORK PROFILE</h1><br>
+        <h3 id="level">LEVEL OF EXPERTISE</h3>
+                <table id="table">
                     <thead>
                         <th>Course</th>
                         <th>Percentage</th>
@@ -138,10 +150,10 @@
 
 
 
-        <h3>My Picture</h3>
+        
         <!-- this is my personal image -->
-        <img src="./IMG-20211118-WA0085.jpg" width="250px" alt="my picture"><br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       
+       <p id="dummy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Illum atque ad modi ab, nihil facere reprehenderit,
          illo ratione molestiae fuga rem
          dolore incidunt, sequi laborum. 
@@ -149,12 +161,13 @@
          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
          Labore sit itaque nesciunt vero possimus deserunt earum,
           praesentium accusantium fugiat temporibus
-          ad, deleniti totam rem culpa sint! Sit dolorum atque aliquid.
+          ad, deleniti totam rem culpa sint! Sit dolorum atque aliquid.</p>
           <br><br>
 
     </div>
         <div>
             <!-- here I emnbedded a video from youtube -->
+            <h3>CSS VIDEO</h3>
             <iframe width="400px" height="250px" 
             src="https://www.youtube.com/embed/2KWdT4PkXgY?si=Ums0fP77yskmFDys"
              title="YouTube video player" frameborder="0" allow="accelerometer; 
@@ -168,8 +181,8 @@
 
 <section>
     <!-- this is the contact section and a form for collecting visitors details -->
-    <h2 style="color: orangered;">CONTACT ME</h2><br>
-    <h3>Fill in the form to reach out to me</h3>
+    <h2 id="cont">CONTACT ME</h2><br>
+    <h3 id="fill">Fill in the form to reach out to me</h3>
     <div class="contact">
         <form action="#">
         <label for="name">Name:</label>
@@ -180,14 +193,16 @@
         <input type="text" placeholder="enter your address"><br><br>
         <label for="number">Phone number:</label>
         <input type="number" placeholder="enter your phone numbber"><br><br>
-        <h3>Select your Gender</h3>
-       
-        <input type="radio" name="gender" value="male">Male <br>
+        <h3 id="gender">Select your Gender</h3>
+       <div class="radio">
+        <input type="radio" name="gender" value="male">Male 
 
-        <input type="radio" name="gender" value="Female">Female <br>
-        <input type="radio" name="gender" value="other">Other <br><br>
+        <input type="radio" name="gender" value="Female">Female 
+        <input type="radio" name="gender" value="other">Other 
         <label for="sumit">Submit:</label>
+  
         <input type="submit" placeholder="submit"><br><br>
+    </div>
         <h3>Courses offered in GOMYCODE</h3><br>
         <select>
             <!-- this is options to choose preferred course of study -->
@@ -204,11 +219,11 @@
 
 
 </section>
-
-<footer>
+<p></p>
+<footer class="footer">
     <!-- this is the footer section which contain my additional information -->
-    <h3>Visit my social media handles for more information</h3>
-    
+    <h3 id="visit">Visit my social media handles for more information</h3>
+    <div class="social">
     <a href="https://www.facebook.com">
         <img src="./facebook.png" width="50px" alt=""></a><br><br>
 
@@ -217,6 +232,7 @@
 
             <a href="https://wa.link/w7p133">
                 <img src="./whatsapp.jpeg" width="50px" alt=""></a><br><br>
+            </div>
 
 
 
